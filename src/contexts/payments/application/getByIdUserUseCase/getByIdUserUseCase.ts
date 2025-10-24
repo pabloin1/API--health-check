@@ -1,8 +1,8 @@
-import { Injectable } from "src/contexts/shared/dependency-injection/injectable";
 import { Payment, PaymentInterface } from "../../domain/payment.entity";
 import { PaymentRepository } from "../../domain/payment.repository";
 import { PaymentNotFoundException } from "../../domain/payment-not-found.exception";
 import { GetByIdUserUseCaseDtoInterface } from "./getbyIdUseCase.dto";
+import { Injectable } from "@nestjs/common";
 
 
 @Injectable()

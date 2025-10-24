@@ -1,7 +1,7 @@
 import { Payment, PaymentInterface } from './../../domain/payment.entity';
 import { PaymentRepository } from "../../domain/payment.repository";
 import { CreatePaymentDto } from "./create-payment.dto";
-import { Injectable } from '../../../shared/dependency-injection/injectable';
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class CreatePaymentUseCase{

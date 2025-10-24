@@ -17,10 +17,10 @@ export class GetByIdPaymentController {
         id: params.id,
       });
     } catch (error) {
-        if(error instanceof PaymentNotFoundException){
-            throw new NotFoundException(error.message)
-        }
-        throw error
+      if (error instanceof PaymentNotFoundException) {
+        throw new NotFoundException(error.message);
+      }
+      throw error;
     }
   }
 }
